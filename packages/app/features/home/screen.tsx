@@ -2,6 +2,7 @@ import { Anchor, Button, H1, Input, Paragraph, Separator, Sheet, XStack, YStack 
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import React, { useState } from 'react'
 import { useLink } from 'solito/link'
+import { Link } from 'expo-router'
 
 export function HomeScreen() {
   const linkProps = useLink({
@@ -36,7 +37,7 @@ export function HomeScreen() {
       </YStack>
 
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button {...linkProps}>Link to user (solito)</Button>
       </XStack>
 
       <SheetDemo />
